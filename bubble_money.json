@@ -1,0 +1,150 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 450,
+    "height": 300,
+    "title": "Will Money Buy Happiness?",
+    "data": {
+      "url": "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/Happines_2015.csv"
+    },
+    "params": [ 
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Australia and New Zealand",
+            "Central and Eastern Europe",
+            "Eastern Asia",
+            "Latin America and Caribbean",
+            "Middle East and Northern Africa",
+            "North America",
+            "Southeastern Asia",
+            "Southern Asia",
+            "Sub-Saharan Africa",
+            "Western Europe"
+          ],
+          "labels": [
+            "Show All",
+            "Australia and New Zealand",
+            "Central and Eastern Europe",
+            "Eastern Asia",
+            "Latin America and Caribbean",
+            "Middle East and Northern Africa",
+            "North America",
+            "Southeastern Asia",
+            "Southern Asia",
+            "Sub-Saharan Africa",
+            "Western Europe"
+          ],
+          "name": "Select Region: "
+        }
+      }
+  
+    ],
+     "transform": [
+      {
+        "filter": "Continent_selection == null || datum.Region == Continent_selection"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Economy (GDP per Capita)",
+        "type": "quantitative",
+        "title": "Economy (GDP per Capita)",
+        "scale": {"domain": [0, 1.8]}
+      },
+      "y": {
+        "field": "Happiness Score",
+        "type": "quantitative",
+        "axis": {"tickCount": 8},
+        "scale": {"domain": [1, 8]}
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+          "size": {
+            "field": "Standard Error",
+            "type": "quantitative",
+            "scale": {
+            "type": "threshold",
+            "domain": [0.025, 0.050, 0.075, 0.100],
+            "range": [100, 250, 500, 750, 1000]
+            },
+            "legend": {"format": ".3f"}
+          },
+          "color": {
+            "field": "Region",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Australia and New Zealand",
+                "Central and Eastern Europe",
+                "Eastern Asia",
+                "Latin America and Caribbean",
+                "Middle East and Northern Africa",
+                "North America",
+                "Southeastern Asia",
+                "Southern Asia",
+                "Sub-Saharan Africa",
+                "Western Europe"
+              ],
+              "range": [
+                "#8dd3c7",
+                "#b3de69",
+                "#bebada",
+                "#fb8072",
+                "#80b1d3",
+                "#ffffb3",
+                "#fccde5",
+                "#d9d9d9",
+                "#bc80bd",
+                "#fdb462"
+              ]
+            }
+          },
+  
+  
+          "tooltip": [
+            {"field": "Happiness Rank", "type": "quantitative", "format": ","},
+            {"field": "Country", "type": "nominal"},
+            {"field": "Region", "type": "nominal"},
+            {"field": "Happiness Score", "type": "quantitative", "format": ","},
+            {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ","},
+            {"field": "Standard Error", "type": "quantitative", "format": ".3f"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "Country", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Country'] == 'Taiwan' || datum['Country'] == 'Costa Rica' || datum['Country'] == 'Australia' || datum['Country'] == 'Czech Republic' || datum['Country'] == 'Canada' || datum['Country'] == 'Israel' ||  datum['Country'] == 'Switzerland'||  datum['Country'] == 'Mauritius' ||  datum['Country'] == 'Bhutan' ||  datum['Country'] == 'Singapore' ",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Happiness Rank", "type": "quantitative", "format": ","},
+            {"field": "Country", "type": "nominal"},
+            {"field": "Region", "type": "nominal"},
+            {"field": "Happiness Score", "type": "quantitative", "format": ","},
+            {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ","},
+            {"field": "Standard Error", "type": "quantitative", "format": ".3f"}
+          ]
+        }
+      }
+    ]
+  }
