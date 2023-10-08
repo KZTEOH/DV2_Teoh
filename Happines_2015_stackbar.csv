@@ -1,7 +1,4 @@
 Attribute,Score,Region
-Happiness Rank,9.5,Australia and New Zealand
-Happiness Score,7.285,Australia and New Zealand
-Standard Error,0.03727,Australia and New Zealand
 Economy (GDP per Capita),1.29188,Australia and New Zealand
 Family,1.31445,Australia and New Zealand
 Health (Life Expectancy),0.919965,Australia and New Zealand
@@ -9,9 +6,6 @@ Freedom,0.64531,Australia and New Zealand
 Trust (Government Corruption),0.392795,Australia and New Zealand
 Generosity,0.455315,Australia and New Zealand
 Dystopia Residual,2.265355,Australia and New Zealand
-Happiness Rank,82.49038462,Central and Eastern Europe
-Happiness Score,5.274413462,Central and Eastern Europe
-Standard Error,0.05052,Central and Eastern Europe
 Economy (GDP per Capita),0.827129038,Central and Eastern Europe
 Family,0.991561635,Central and Eastern Europe
 Health (Life Expectancy),0.627394808,Central and Eastern Europe
@@ -19,9 +13,6 @@ Freedom,0.401869519,Central and Eastern Europe
 Trust (Government Corruption),0.108347981,Central and Eastern Europe
 Generosity,0.221132788,Central and Eastern Europe
 Dystopia Residual,2.096995962,Central and Eastern Europe
-Happiness Rank,68.98412698,Eastern Asia
-Happiness Score,5.535936508,Eastern Asia
-Standard Error,0.051455873,Eastern Asia
 Economy (GDP per Capita),0.919864444,Eastern Asia
 Family,1.048415079,Eastern Asia
 Health (Life Expectancy),0.682644762,Eastern Asia
@@ -29,9 +20,6 @@ Freedom,0.427807619,Eastern Asia
 Trust (Government Corruption),0.110707143,Eastern Asia
 Generosity,0.212139841,Eastern Asia
 Dystopia Residual,2.134348889,Eastern Asia
-Happiness Rank,65.49074074,Latin America and Caribbean
-Happiness Score,5.682212963,Latin America and Caribbean
-Standard Error,0.04926213,Latin America and Caribbean
 Economy (GDP per Capita),0.952388148,Latin America and Caribbean
 Family,1.052029259,Latin America and Caribbean
 Health (Life Expectancy),0.696496481,Latin America and Caribbean
@@ -39,9 +27,6 @@ Freedom,0.431356111,Latin America and Caribbean
 Trust (Government Corruption),0.129934352,Latin America and Caribbean
 Generosity,0.223340278,Latin America and Caribbean
 Dystopia Residual,2.196690648,Latin America and Caribbean
-Happiness Rank,83.49315068,Middle East and Northern Africa
-Happiness Score,5.269041096,Middle East and Northern Africa
-Standard Error,0.048327945,Middle East and Northern Africa
 Economy (GDP per Capita),0.822746164,Middle East and Northern Africa
 Family,0.977720274,Middle East and Northern Africa
 Health (Life Expectancy),0.616336233,Middle East and Northern Africa
@@ -49,9 +34,6 @@ Freedom,0.416327671,Middle East and Northern Africa
 Trust (Government Corruption),0.128475548,Middle East and Northern Africa
 Generosity,0.227850548,Middle East and Northern Africa
 Dystopia Residual,2.079605479,Middle East and Northern Africa
-Happiness Rank,10,North America
-Happiness Score,7.286818182,North America
-Standard Error,0.036175455,North America
 Economy (GDP per Capita),1.254370909,North America
 Family,1.250861818,North America
 Health (Life Expectancy),0.889015455,North America
@@ -59,9 +41,6 @@ Freedom,0.594542727,North America
 Trust (Government Corruption),0.275265455,North America
 Generosity,0.354575455,North America
 Dystopia Residual,2.668198182,North America
-Happiness Rank,84.49180328,Southeastern Asia
-Happiness Score,5.237229508,Southeastern Asia
-Standard Error,0.049732459,Southeastern Asia
 Economy (GDP per Capita),0.824542131,Southeastern Asia
 Family,0.988079098,Southeastern Asia
 Health (Life Expectancy),0.619112459,Southeastern Asia
@@ -69,9 +48,6 @@ Freedom,0.405932213,Southeastern Asia
 Trust (Government Corruption),0.116274098,Southeastern Asia
 Generosity,0.218944508,Southeastern Asia
 Dystopia Residual,2.064361311,Southeastern Asia
-Happiness Rank,115.9866667,Southern Asia
-Happiness Score,4.52068,Southern Asia
-Standard Error,0.0498672,Southern Asia
 Economy (GDP per Capita),0.595561467,Southern Asia
 Family,0.846770933,Southern Asia
 Health (Life Expectancy),0.4819528,Southern Asia
@@ -79,9 +55,6 @@ Freedom,0.3535804,Southern Asia
 Trust (Government Corruption),0.1036052,Southern Asia
 Generosity,0.221544267,Southern Asia
 Dystopia Residual,1.9176856,Southern Asia
-Happiness Rank,114.4886364,Sub-Saharan Africa
-Happiness Score,4.518534091,Sub-Saharan Africa
-Standard Error,0.049473523,Sub-Saharan Africa
 Economy (GDP per Capita),0.605209659,Sub-Saharan Africa
 Family,0.840210455,Sub-Saharan Africa
 Health (Life Expectancy),0.494866705,Sub-Saharan Africa
@@ -89,9 +62,6 @@ Freedom,0.362583409,Sub-Saharan Africa
 Trust (Government Corruption),0.110706477,Sub-Saharan Africa
 Generosity,0.228394318,Sub-Saharan Africa
 Dystopia Residual,1.876584432,Sub-Saharan Africa
-Happiness Rank,51.49019608,Western Europe
-Happiness Score,6.037303922,Western Europe
-Standard Error,0.047633824,Western Europe
 Economy (GDP per Capita),1.043011078,Western Europe
 Family,1.117270294,Western Europe
 Health (Life Expectancy),0.742686667,Western Europe
