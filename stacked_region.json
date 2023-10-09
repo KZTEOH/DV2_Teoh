@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 450,
+    "height": 600,
+    "title": "Happiness Comparsion between Region",
+    "data": {
+      "url": "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/Happines_2015_stackbar.csv"
+    },
+    "params": [ {
+      "name": "Attribute_selection",
+      "bind": {
+      "input": "select",
+      "options": [
+        null,
+        "Economy (GDP per Capita)",
+        "Family",
+        "Health (Life Expectancy)",
+        "Freedom",
+        "Trust (Government Corruption)",
+        "Generosity",
+        "Dystopia Residual"
+    ],
+    "labels":[
+      "Show All",
+      "Economy (GDP per Capita)",
+      "Family",
+      "Health (Life Expectancy)",
+      "Freedom",
+      "Trust (Government Corruption)",
+      "Generosity",
+      "Dystopia Residual"
+    ],
+    "name": "Happiness Attribute: " }
+    } ],
+    "transform": [
+      {"filter": "Attribute_selection == null || datum.Attribute == Attribute_selection"} 
+      ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Region",
+        "type": "ordinal"
+      },
+      "y": {
+        "field":"Score",
+        "type":"quantitative",
+        "aggregate":"sum"
+      },
+      "color": {
+        "type":"nominal",
+        "field": "Attribute",
+        "scale": {
+          "domain": [
+            "Economy (GDP per Capita)",
+            "Family",
+            "Health (Life Expectancy)",
+            "Freedom",
+            "Trust (Government Corruption)",
+            "Generosity",
+            "Dystopia Residual"
+          ],
+          "range": ["#1E90FF","#9370DB","#DC143C","#FF69B4","#FF8C00","#9ACD32","#FFD700","#808080","#CD853F"]
+        },
+        "title": "Happiness Attribute:"        
+      },
+      "tooltip": [
+        {"field": "Attribute", "type": "nominal"},
+        {"field": "Score", "type": "quantitative", "format": ","},
+        {"field": "Region", "type": "nominal"}
+        ]
+    },
+    "config": {}
+  }
