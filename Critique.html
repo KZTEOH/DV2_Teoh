@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>World Happiness Report</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+</head>
+<body style="background:#fbfba4">
+<body>
+
+  <div class="spacing2"></div>
+
+<div class="page2">
+    <!-- pure grid group -->
+    <div class="spacing2"></div>
+    <!-- end pure grid group -->
+
+  <div class="spacing4"></div>
+    <div id="container">
+      <div class="center"><h1 style="font-size: 100px">World Happiness Report</h1>
+      </div>
+   </div>
+</div>
+<div class="page3">
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+      <div class="description description-left">
+        <p>In a world constantly chasing success and wealth, the pursuit of happiness stands as the most coveted treasure. It's the elusive treasure we all seek, transcending cultural, geographic, and individual boundaries. But what exactly is happiness, and where do we find it?</p>
+        <p>In this visualisation, you can have an overview the state of global happiness, identify the contribution of happiness in different region in the world, and discover the relationship between different happiness attributes - economic production, social support, life expectancy, freedom, absence of corruption, and generosity.</p>
+      </div>
+    </div>
+    </div>
+    <!-- end pure grid group -->
+  </div>
+
+        <!-- ---------------------2nd PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ---------------------- -->
+
+    <div class="spacing">
+    </div>
+  
+    <div class="page">
+    <br>
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+          <div class="pure-u-1-1">
+            <div class="description description-left">
+              <h2>Where is Happiness?</h2>
+              <p>
+                The maps shows gives the happiness score of 159 countries around the world based on seven factors including family, life expectancy, economy, generosity, trust in government, freedom, and dystopia residual. Sum of the value of these seven factors gives us the happiness score and the higher the happiness score, the lower the happiness rank. So, it is evident that the higher value of each of these seven factors means the level of happiness is higher. 
+              </p>
+
+              
+          </div>
+        </div>
+        </div>
+        <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="center">
+      <div class="pure-u-1-1"></div>
+      <div id="vis2"></div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+        <p>From this map you can see happiness leaders regions - North America, Western Europe, Australia and New Zealand. Colors from this map reflects the level of happiness.
+        </p>          
+        
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <p> 
+          Don't read this I haven't finish writting up the content :)
+        </p>      
+      </div>
+    </div>
+    <!-- end pure grid group -->
+  </div>
+
+       <!-- ---------------------2nd PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ---------------------- -->  
+  <div class="spacing">
+  </div>
+
+  <div class="page">
+  <br>
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+          <div class="pure-u-1-1">
+            <div class="description description-left">
+              <h2>Which Region are more Happy?</h2>
+            <p>This stackbar chart compare happiness score for different region with differnt attributes.
+            </p>
+          </div>
+        </div>
+        <!-- end pure grid group -->
+        <p> </p>
+
+        
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
+        </div>
+      <div class="pure-u-1-2">
+        <div class="box">
+          <p><b>Australia</b> and <b>New Zealand</b>, and North America seems to be pretty happy. </p>          
+          <p>You are in Australia.</p>
+          <p>Are you Happy?</p>
+<br><br><br><br>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+
+<br><br><br><br>
+
+          <p>If you read this I hope you're happy :)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <br>
+    <!-- end pure grid group -->
+
+        <!-- ---------------------4th PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ---------------------- -->
+      </div>
+  <div class="spacing">
+  </div>
+  
+  <div class="page">
+  <br>
+  
+        <!-- pure grid group -->
+        <div class="pure-g">
+          <div class="pure-u-1-1">
+            <div class="description description-left">
+              <h2>What makes us Happy?</h2>
+              <p>The pie chart shows blah blah blah blah blah </p>
+          </div>
+        </div>
+        <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-leftpg4">
+          <p>Seems like  <b><span style="color: #1E90FF">Economy</span></b> which represent money and <b><span style="color: #9370DB">Family</span> which represent relationship plays the most important role in happiness.</b>
+        </div>
+        <div class="description description-leftpg4">
+          <p>What do you think? Money or Relationship?
+          </p>
+        </div>
+        <div class="description description-leftpg4">
+          <p>Let's explore this in the next section ok!
+          </p>
+          <br><br>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="vis4" class="vis-containerrr"; ></div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+    <!-- end pure grid group -->
+
+      <!-- ---------------------5th PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ---------------------- -->
+      <div class="spacing">
+      </div>
+    
+      <div class="page">
+      <br>
+  
+          <!-- pure grid group -->
+          <div class="pure-g">
+            <div class="pure-u-1-1">
+              <div class="description description-left">
+                <h2>Will Money buy Happiness?</h2>
+                <p> Look I said I haven't write things up. So just look at the visualisation ok!
+              </p>
+              <p> Y axis is the score, X axis is MONEY, Size is FAMILY!
+              </p>
+            </div>
+          </div>
+          </div>
+          <!-- end pure grid group -->
+  
+      <!-- pure grid group -->
+      <div class="center">
+        <div class="pure-u-1-1"></div>
+        <div id="vis5"></div>
+      </div>
+      <!-- end pure grid group -->
+  
+      <!-- pure grid group -->
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class="description description-left">
+          <p>
+            As you can see, positive trend, MORE MONEY MORE HAPPINESS!
+          </p>          
+
+          <p>
+            But if you look closely, low income country can be happy too if relationship contribute to the score.
+          </p> 
+
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+          <p>
+            Therefore, it doesn't cost much you to have a nice relationship with family and friends that will also makes you happy!
+          </p>   
+          <p>
+            <b><i>So, Spread love to your family and friends today!</i></b>
+          </p>      
+        </div>
+      </div>
+      <!-- end pure grid group -->
+    </div>
+
+   <!-- ---------------------6th PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ---------------------- -->
+  </div>
+  <div class="spacing">
+  </div>
+  
+  <div class="page">
+  <br>
+  <p style = "text-align: center"><b>Kee Zheng Teoh | FIT3179 - Data Visualisation 2</b></p>
+
+  <p style = "text-align: right; font-size: 15px">Source: <a href="https://www.kaggle.com/datasets/unsdsn/world-happiness">Kaggle</a></p>
+
+  </div> <!-- end page -->
+<br>
+<p> </p>
+<br>
+
+
+
+  
+  <script type="text/javascript">
+    var specVis1 = "";
+    var specVis2 = "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/chloropleth_map.json";
+    var specVis3 = "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/stacked_region.json";
+    var specVis4 = "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/pie_attribute.json";
+    var specVis5 = "https://raw.githubusercontent.com/KZTEOH/DV2_Teoh/main/bubble_money.json";
+    var specVis12 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/test.json";
+    var specVis6 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/visualisation/Age%20of%20Plastic%20Surgery%20Patients.json";
+    var specVis7 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/visualisation/gender%20pie%20chart.json";
+    var specVis8 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/visualisation/ASS2_female_slider.json";
+    var specVis9 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/visualisation/ASS2_male_slider.json";
+    var specVis11 = "https://raw.githubusercontent.com/cherlinedelfina/FIT3179_ASS2/main/visualisation/ASS2_male_female_bar.json";
+    
+
+    vegaEmbed('#vis1', specVis1, { "actions": false });
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis12', specVis12, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis8', specVis8, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis9', specVis9, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis11', specVis11, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+  
+</body>
+
+</html>
