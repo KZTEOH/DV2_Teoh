@@ -37,8 +37,9 @@
           "Sub-Saharan Africa",
           "Western Europe"
         ],
+       
         "name": "Select Region: "
-      }
+          } 
     }
 
   ],
@@ -71,7 +72,7 @@
           "scale": {
           "type": "threshold",
           "domain": [0.25, 0.50, 0.75, 1.00, 1.25],
-          "range": [100, 200, 400, 600, 800, 1000]
+          "range": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
           },
           "legend": {"format": ".2f"}
         },
@@ -111,8 +112,8 @@
           {"field": "Happiness Rank", "type": "quantitative", "format": ","},
           {"field": "Country", "type": "nominal"},
           {"field": "Region", "type": "nominal"},
-          {"field": "Happiness Score", "type": "quantitative", "format": ","},
-          {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ","},
+          {"field": "Happiness Score", "type": "quantitative", "format": ".3f"},
+          {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ".3f"},
           {"field": "Family", "type": "quantitative", "format": ".3f"}
         ]
       }
@@ -122,7 +123,8 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 12,
+        "dx": -15,
+        "dy": -20,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
@@ -131,7 +133,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Taiwan' || datum['Country'] == 'Costa Rica' || datum['Country'] == 'Australia' || datum['Country'] == 'Czech Republic' || datum['Country'] == 'Canada' || datum['Country'] == 'Israel' ||  datum['Country'] == 'Switzerland'||  datum['Country'] == 'Mauritius' ||  datum['Country'] == 'Bhutan' ||  datum['Country'] == 'Singapore' ",
+            "test": "datum['Country'] == 'Mozambique' || datum['Country'] == 'Syria' || datum['Country'] == 'Qatar' || datum['Country'] == 'Brazil'",
             "value": 1
           },
           "value": 0
@@ -140,8 +142,8 @@
           {"field": "Happiness Rank", "type": "quantitative", "format": ","},
           {"field": "Country", "type": "nominal"},
           {"field": "Region", "type": "nominal"},
-          {"field": "Happiness Score", "type": "quantitative", "format": ","},
-          {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ","},
+          {"field": "Happiness Score", "type": "quantitative", "format": ".3f"},
+          {"field": "Economy (GDP per Capita)", "type": "quantitative", "format": ".3f"},
           {"field": "Family", "type": "quantitative", "format": ".3f"}
         ]
       }

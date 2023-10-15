@@ -40,9 +40,16 @@
     "transform": [
   {"filter": "Region_selection == null || datum.Region == Region_selection"}
   ],
+  
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
-      "theta": {"field": "Score", "type": "quantitative"},
+      "theta": {
+        "field": "Score", 
+        "type": "quantitative",
+        "sort": {"field": "Score", "order":"ascending"}
+      },
+        
+      
       "color": {"field": "Attribute", "type": "nominal",
       "scale": {
           "domain": [
@@ -54,14 +61,14 @@
             "Generosity",
             "Dystopia Residual"
           ],
-          "range": ["#1E90FF","#9370DB","#DC143C","#FF69B4","#FF8C00","#9ACD32","#FFD700","#808080","#CD853F"]
+          "range": ["#1E90FF","#9370DB","#DC143C","#FF69B4","#FF8C00","#9ACD32","#CD853F","#FFD700","#808080"]
         },
         "title": "Happiness Attribute"        
       },
   
   "tooltip": [
   {"field": "Attribute", "type": "nominal", "title":"Happiness Attribute"},
-  {"field": "Score", "type": "quantitative", "format": ","},
+  {"field": "Score", "type": "quantitative", "format": ".3f"},
   {"field": "Region", "type": "nominal"}
   ]
     },

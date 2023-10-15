@@ -33,18 +33,25 @@
     "name": "Happiness Attribute: " }
     } ],
     "transform": [
-      {"filter": "Attribute_selection == null || datum.Attribute == Attribute_selection"} 
+      {"filter": "Attribute_selection == null || datum.Attribute == Attribute_selection"}
       ],
-    "mark": "bar",
+
+    "layer": [
+      {
+            "mark": "bar",
     "encoding": {
       "x": {
         "field": "Region",
-        "type": "ordinal"
+        "type": "ordinal",
+        "sort": {"op": "sum", "field": "Score", "order":"descending"}
       },
       "y": {
         "field":"Score",
         "type":"quantitative",
-        "aggregate":"sum"
+        "aggregate":"sum",
+        "stack": "zero",
+        "sort": {"field": "Score", "order":"descending"},
+        "title": "Average Happiness Score"
       },
       "color": {
         "type":"nominal",
@@ -59,15 +66,21 @@
             "Generosity",
             "Dystopia Residual"
           ],
-          "range": ["#1E90FF","#9370DB","#DC143C","#FF69B4","#FF8C00","#9ACD32","#FFD700","#808080","#CD853F"]
+          "range": ["#1E90FF","#9370DB","#DC143C","#FF69B4","#FF8C00","#9ACD32","#CD853F","#FFD700","#808080"]
+          
         },
-        "title": "Happiness Attribute:"        
+        "title": "Happiness Attribute:"   
       },
+      
+      
       "tooltip": [
         {"field": "Attribute", "type": "nominal"},
-        {"field": "Score", "type": "quantitative", "format": ","},
+        {"field": "Score", "type": "quantitative", "format": ".3f"},
         {"field": "Region", "type": "nominal"}
-        ]
-    },
+        ]}
+    }
+    ],
+
+    
     "config": {}
   }
