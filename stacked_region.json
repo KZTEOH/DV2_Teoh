@@ -33,26 +33,38 @@
     "name": "Happiness Attribute: " }
     } ],
     "transform": [
-      {"filter": "Attribute_selection == null || datum.Attribute == Attribute_selection"}
-      ],
-
-    "layer": [
+      {"filter": "Attribute_selection == null || datum.Attribute == Attribute_selection"},
       {
-            "mark": "bar",
-    "encoding": {
+        "aggregate": [
+          {
+            "op": "sum",
+            "field": "Score",
+            "as": "Total Score"
+          }
+        ],
+        "groupby": [
+          "Region",
+          "Attribute"
+        ]
+      }
+      ],
+       "encoding": {
       "x": {
         "field": "Region",
         "type": "ordinal",
-        "sort": {"op": "sum", "field": "Score", "order":"descending"}
+        "sort": {"op": "sum", "field": "Total Score", "order":"descending"}
       },
       "y": {
-        "field":"Score",
+        "field":"Total Score",
         "type":"quantitative",
         "aggregate":"sum",
-        "stack": "zero",
-        "sort": {"field": "Score", "order":"descending"},
+        "sort": {"field": "Total Score", "order":"descending"},
         "title": "Average Happiness Score"
-      },
+      }},
+    "layer": [
+      {
+            "mark": "bar",
+ "encoding": {
       "color": {
         "type":"nominal",
         "field": "Attribute",
@@ -74,11 +86,32 @@
       
       
       "tooltip": [
-        {"field": "Attribute", "type": "nominal"},
-        {"field": "Score", "type": "quantitative", "format": ".3f"},
+        {"field": "Attribute", "type": "nominal", "title":"Happiness Attribute"},
+        {"field": "Total Score", "type": "quantitative", "format": ".3f", "title":"Score"},
         {"field": "Region", "type": "nominal"}
+
         ]}
-    }
+    },
+    { "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "bottom",
+          "dx": 15,
+
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {
+            "aggregate": "sum",
+            "field": "Total Score",
+            "type": "quantitative",
+            "format": ".3f"
+          },
+          "color": {
+            "value": "black"
+          }
+        }    }
     ],
 
     
