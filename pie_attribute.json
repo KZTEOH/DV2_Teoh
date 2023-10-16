@@ -40,13 +40,16 @@
     "transform": [
   {"filter": "Region_selection == null || datum.Region == Region_selection"}
   ],
-  
+
+  "layer" :[{
+    
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
       "theta": {
         "field": "Score", 
         "type": "quantitative",
         "sort": {"field": "Score", "order":"ascending"}
+
       },
         
       
@@ -71,6 +74,15 @@
   {"field": "Score", "type": "quantitative", "format": ".3f"},
   {"field": "Region", "type": "nominal"}
   ]
+    }
+
+    
     },
-    "config": {}
+    {        "mark": {
+          "type": "text",
+          "fontSize": 15
+        },
+        "encoding": {
+          "text": {"field": "Score", "type": "quantitative", "aggregate": "sum","format": ".2f"}
+        }}]
   }
